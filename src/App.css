@@ -7,32 +7,249 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.left-side,
+.right-side {
+  position: absolute;
+  top: 0;
+  left: 588px;
+  background-color: var(--background);
+  width: 852px;
+  height: 1024px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.left-side {
+  left: 0;
+  background-color: var(--color-black);
+  width: 588px;
 }
-
-.App-link {
-  color: #61dafb;
+.board {
+  position: absolute;
+  top: 464px;
+  left: 171px;
+  font-size: 72px;
+  color: var(--primary-contrast);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card,
+.card1,
+.input-field1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.card1 {
+  height: 100%;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  border-radius: var(--br-xl);
+  background-color: var(--primary-contrast);
+}
+.card,
+.input-field1 {
+  width: 385px;
+  height: 317px;
+}
+.input-field1 {
+  height: 100%;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--background);
+}
+.input-field {
+  top: 59px;
+  left: 30px;
+  width: 325px;
+  height: 40px;
+}
+.div,
+.input,
+.input-field {
+  position: absolute;
+}
+.input {
+  height: 11.24%;
+  width: 84.42%;
+  top: 41.57%;
+  right: 7.79%;
+  bottom: 47.19%;
+  left: 7.79%;
+  border-radius: var(--br-3xs);
+  background-color: var(--field-color-darker);
+}
+.div {
+  top: 44.38%;
+  left: 11.69%;
+}
+.login-form-child {
+  position: absolute;
+  height: 5.34%;
+  width: 0.26%;
+  top: 44.52%;
+  right: 68.7%;
+  bottom: 50.14%;
+  left: 31.04%;
+  border-right: 1px solid var(--icon);
+  box-sizing: border-box;
+}
+.button-primary1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-black);
+}
+.button-primary,
+.sign-in1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 325px;
+  height: 40px;
+}
+.sign-in1 {
+  top: 9px;
+  left: 112.58px;
+  display: inline-block;
+  width: 101.96px;
+  height: 21.71px;
+}
+.button-sign-in {
+  position: absolute;
+  top: 247px;
+  left: 30px;
+  width: 325px;
+  height: 40px;
+  text-align: center;
+  color: var(--primary-contrast);
+  font-family: var(--font-montserrat);
+}
+.email-address,
+.johndoegmailcom {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.johndoegmailcom {
+  top: 69px;
+  left: 45px;
+}
+.forgot-password,
+.password {
+  position: absolute;
+  top: 119px;
+  left: 30px;
+}
+.forgot-password {
+  top: 208px;
+  left: 31px;
+}
+.forgot-password,
+.register-here {
+  color: var(--link);
+}
+.dont-have-an-container {
+  position: absolute;
+  top: 337px;
+  left: 62px;
+  text-align: center;
+  color: var(--secondary-text);
+}
+.login-form {
+  position: absolute;
+  top: 409px;
+  left: 832px;
+  width: 385px;
+  height: 356px;
+  font-family: var(--font-lato);
+}
+.button,
+.white {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.button {
+  height: 100%;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--primary-contrast);
+}
+.white {
+  width: 180px;
+  height: 30px;
+}
+.google-icon-1,
+.sign-in-with {
+  position: absolute;
+  top: 8px;
+  left: 43px;
+}
+.google-icon-1 {
+  left: 19px;
+  width: 14px;
+  height: 14px;
+  overflow: hidden;
+}
+.google-sign-in {
+  position: absolute;
+  top: 354px;
+  left: 832px;
+  width: 180px;
+  height: 30px;
+  text-align: center;
+  font-size: var(--font-size-xs);
+  color: var(--secondary-text);
+}
+.apple-1-icon,
+.sign-in-with1 {
+  position: absolute;
+  top: 8px;
+  left: 46px;
+}
+.apple-1-icon {
+  top: 7px;
+  left: 24px;
+  width: 11.5px;
+  height: 14px;
+  overflow: hidden;
+}
+.apple-sign-in {
+  position: absolute;
+  top: 354px;
+  left: 1037px;
+  width: 180px;
+  height: 30px;
+  text-align: center;
+  font-size: var(--font-size-xs);
+  color: var(--secondary-text);
+}
+.sign-in-to,
+.sign-in2 {
+  position: absolute;
+  left: 832px;
+}
+.sign-in2 {
+  top: 260px;
+  font-size: var(--font-size-17xl);
+}
+.sign-in-to {
+  top: 309px;
+  font-family: var(--font-lato);
+}
+.sign-in {
+  position: relative;
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
 }
